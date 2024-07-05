@@ -26,5 +26,17 @@
             window.alert(`Olá, ${nome}!`)
         }
     </script>
+
+    <button onclick="start()">Clique para começar</button>
+    <section id="resultado">
+        <p>Aqui vai o resultado...</p>
+    </section>
+    <script>
+        function start(){
+            let nome = window.prompt('Qual é o seu nome?')
+            let res = window.document.getElementById('resultado')
+            res.innerHTML += `<p>Olá, <strong>${nome}</strong>! É um prazer te conhecer  &#x1F596;`
+        }
+    </script>
 </body>
 </html>
