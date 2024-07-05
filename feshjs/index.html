@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {font : 12pt arial; }
+        head {font-size : 12pt; padding : 30px;}
+    </style>
+</head>
+<body> 
+    <h1>Interagindo com um botão.</h1>
+    <button onclick = "clicou()">Clique!</button>
+    <script>
+        function clicou(){
+            window.alert('Você clicou no botão!')
+        }
+    </script>
+
+    <h1>Trabalhando com dados.</h1>
+    <button onclick = "iniciar()">Clique para começar</button>
+    <script>
+        function iniciar(){
+            let nome = window.prompt('Qual o seu nome?')
+            window.alert(`Olá, ${nome}!`)
+        }
+    </script>
+</body>
+</html>
