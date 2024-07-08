@@ -55,5 +55,22 @@
             res.innerHTML = `<p>O dobro de ${n1} é ${n1*2} e a metade é ${n1/2}!<p>`
            }
     </script>
+
+    <h1>Somando dois números</h1>
+    <button onclick = "somar()">Iniciar a soma</button>
+    <section id ="resu">
+        <p>O resultado vem aqui...</p>
+    </section>
+
+    <script>
+        function somar(){
+            let n1 = Number(window.prompt('Digite um número '))
+            let n2 = Number(window.prompt('Digite outro número '))
+            soma = n1 + n2
+
+            let  res = window.document.getElementById = ('resu')
+            res.innerHTML = `<p>A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${soma}</strong>!</p>`
+        }
+    </script>
 </body>
 </html>
