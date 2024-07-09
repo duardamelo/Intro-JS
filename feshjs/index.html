@@ -72,5 +72,47 @@
             res.innerHTML = `<p>A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${soma}</strong>!</p>`
         }
     </script>
+
+    <!-- ex007 -->
+    <h1>Média do aluno</h1>
+    <button onclick = "media()">Calcular Média</button>
+    <section id="situacao">
+        <p>Aqui o resultado da média...</p>
+    </section>
+
+    <script>
+        function media(){
+            let nome = window.prompt('Qual o nome do aluno?')
+            let n1 = Number(window.prompt(`Digite a primeira nota de ${nome}`))
+            let n2 = Number(window.prompt('Agora digite a segunda nota'))
+            media = (n1+n2)/2
+
+            let res = document.getElementById('situacao')
+            res.innerHTML = `<p>A média final de ${nome} é <mark>${media}</mark></p>`
+        }
+    </script>
+
+    <!-- ex008 -->
+     <h1>Vários cálculos em JS</h1>
+     <button onclick="calcular()">Clique para calcular</button>
+     <section id="result">
+        <p>O resultado aqui... </p>
+     </section>
+
+     <script>
+        function calcular(){
+            let num = Number(window.prompt('Digite um número'))
+
+            let res = document.getElementById('result')
+            res.innerHTML =`<p>${num}</p>`
+            res.innerHTML += `<p>Valor absoluto: ${Math.abs(num)}</p>`
+            res.innerHTML += `<p>Parte inteira: ${Math.trunc(num)}</p>`
+            res.innerHTML +=`<p>Inteiro mais próximo: ${Math.round(num)}</p>`
+            res.innerHTML +=`<p>Raiz quadrada: ${Math.sqrt(num)}</p>`
+            res.innerHTML +=`<p>Raiz cúbica: ${Math.cbrt(num)}</p>`
+            res.innerHTML +=`<p>O valor de ${num}<sup>2</sup> é ${Math.pow(num, 2)}</p>`
+            res.innerHTML += `<p>O valor de ${num}<sup>3</sup> é ${Math.pow(num, 3)}</p>`
+        }
+     </script>
 </body>
 </html>
