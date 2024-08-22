@@ -1,2 +1,2 @@
 # jsbasico
- introdução à JavaScript
+ Repositório com exercícios do curso de JavaScript do curso em vídeo 
